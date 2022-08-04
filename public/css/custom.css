@@ -1,0 +1,44 @@
+html, main {
+    background-color: #dddddd;
+}
+
+.logo {
+    color: #87ceeb;
+}
+
+.links {
+    color: #87ceeb;
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.links:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.divisor {
+    border-right: 1px solid #87ceeb;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: #87ceeb;
+    font-size: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+
+.hamburguer {
+    color: #87ceeb;
+}
