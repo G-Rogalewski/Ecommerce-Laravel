@@ -147,6 +147,7 @@ main {
     color: #0d7eaa;
     margin-bottom: 25px;
     cursor: pointer;
+    transition: 0.4s;
 }
 .add-button:hover {
     color: #dddddd;
