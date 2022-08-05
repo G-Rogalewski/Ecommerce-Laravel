@@ -28,6 +28,10 @@ html, main {
     padding-left: 10px;
 }
 
+.search-field::placeholder {
+    color: #a0aab8;
+}
+
 .search-button {
     width: 20%;
     height: 5vh;

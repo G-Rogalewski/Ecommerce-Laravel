@@ -5,14 +5,14 @@
                 <h1 class="logo">FutStore</h1>
             </a>
 
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-header">
-                <i class="fas fa-bars hamburguer"></i>
-            </button>
-
             <div class="search-bar">
                 <input class="search-field" type="text" placeholder="Pesquisar..">
                 <button class="search-button"><i class="fas fa-search search-icon"></i></button>
             </div>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-header">
+                <i class="fas fa-bars hamburguer"></i>
+            </button>
 
             <div class="collapse navbar-collapse" id="nav-header">
                 <ul class="navbar-nav ml-auto">
