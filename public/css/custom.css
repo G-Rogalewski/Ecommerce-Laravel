@@ -45,6 +45,68 @@ html, main {
     color: #87ceeb;
 }
 
+main {
+    padding-top: 50px;
+}
+
+.card {
+    background-color: #dddddd!important;
+    margin: 20px 0;
+   transition: 0.4s;
+}
+
+.card:hover {
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.card-img {
+    margin-top: 10px;
+}
+
+.product-name {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #4b4b4b;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.product-name:hover {
+    text-decoration: underline;
+    color: #8b8b8b;
+    transition: 0.4s;
+}
+
+.product-price {
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: #4b4b4b;
+    margin-left: 10px;
+}
+
+.product-button {
+    text-align: center;
+}
+
+.add-button {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0d7eaa;
+    background-color: #dddddd;
+    color: #0d7eaa;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.add-button:hover {
+    color: #dddddd;
+    background-color: #0d7eaa;
+    transition: 0.4s;
+}
+
 footer {
     padding: 20px 0;
 }
