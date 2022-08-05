@@ -105,6 +105,12 @@ main {
 
 .card-img {
     margin-top: 25px;
+    transition: 0.4s;
+}
+
+.card-img:hover {
+    transform: scale(1.07);
+    transition: 0.4s;
 }
 
 .product-name {
