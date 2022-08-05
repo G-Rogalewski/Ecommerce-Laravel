@@ -88,3 +88,22 @@ footer h3 {
     font-weight: 600;
     margin-left: 5px;
 }
+
+footer hr {
+    background-color: #dddddd;
+}
+
+footer p {
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.midia {
+    color: #87ceeb;
+    font-size: 26px;
+    margin: 0 5px;
+}
