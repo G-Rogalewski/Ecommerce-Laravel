@@ -8,6 +8,44 @@ html, main {
     font-size: 50px;
 }
 
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.search-field {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid #a0aab8;
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    background-color: #343a40;
+    color: #a0aab8;
+    padding-left: 10px;
+}
+
+.search-button {
+    width: 20%;
+    height: 5vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #87ceeb;
+    border: 1px solid #87ceeb;
+    color: #343a40;
+    transition: 0.4s;
+}
+
+.search-button:hover {
+    background-color: #343a40;
+    color: #87ceeb;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
 .links {
     color: #87ceeb;
     margin: 0 5px;
@@ -56,14 +94,13 @@ main {
 }
 
 .card:hover {
-    border: 0.5px solid black;
-    box-shadow: 5px 5px 10px grey, -5px -5px 10px grey;
+    box-shadow: 5px 5px 10px #a0aab8, -5px -5px 10px #a0aab8;
     transition: 0.4s;
     cursor: pointer;
 }
 
 .card-img {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .product-name {

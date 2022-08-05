@@ -9,6 +9,11 @@
                 <i class="fas fa-bars hamburguer"></i>
             </button>
 
+            <div class="search-bar">
+                <input class="search-field" type="text" placeholder="Pesquisar..">
+                <button class="search-button"><i class="fas fa-search search-icon"></i></button>
+            </div>
+
             <div class="collapse navbar-collapse" id="nav-header">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
