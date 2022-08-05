@@ -4,6 +4,8 @@ html, main {
 
 .logo {
     color: #87ceeb;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 50px;
 }
 
 .links {
