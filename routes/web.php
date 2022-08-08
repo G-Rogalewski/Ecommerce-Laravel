@@ -13,4 +13,12 @@
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
+
+Route::get('/clubes_paranaenses', function () {
+    return view('clubes_paranaenses');
+})->name('clubes_paranaenses');
+
+Route::get('/clubes_gauchos', function () {
+    return view('clubes_gauchos');
+})->name('clubes_gauchos');

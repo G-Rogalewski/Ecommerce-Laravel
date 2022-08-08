@@ -1,7 +1,7 @@
 @section('header')
     <nav class="navbar navbar-expand-md bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{ route('home') }}">
                 <h1 class="logo">FutStore</h1>
             </a>
 
@@ -16,22 +16,30 @@
 
             <div class="collapse navbar-collapse" id="nav-header">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link links" href="">Brasileiros</a>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link links dropdown-toggle" 
+                            role="button" 
+                            id="dropdownMenuLink" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false" 
+                            >Brasileiros</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses') }}">Paraná</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos') }}">Rio Grande do Sul</a>
+                            <a class="dropdown-item submenu-link" href="#">Santa Catarina</a>
+                            <a class="dropdown-item submenu-link" href="#">Rio de Janeiro</a>
+                        </div>
                     </li>
-                    <span class="divisor"></span>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Europeus</a>
                     </li>
-                    <span class="divisor"></span>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Seleções</a>
                     </li>
-                    <span class="divisor"></span>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Chuteiras</a>
                     </li>
-                    <span class="divisor"></span>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Luvas</a>
                     </li>
