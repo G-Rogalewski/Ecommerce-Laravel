@@ -211,12 +211,35 @@ html, main, section {
     color: #0d7eaa;
     margin-bottom: 25px;
     cursor: pointer;
-    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
+
+.add-button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #0d7eaa;
+    z-index: -1;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+}
+
 .add-button:hover {
     color: #dddddd;
-    background-color: #0d7eaa;
-    transition: 0.4s;
+}
+
+.add-button:hover:after {
+    width: 110%;
 }
 
 footer {
