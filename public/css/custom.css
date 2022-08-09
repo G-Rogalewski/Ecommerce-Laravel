@@ -127,9 +127,36 @@ html, main, section {
     color: #87ceeb;
 }
 
-main {
-    padding-top: 50px;
+
+
+/***CAROUSEL***/
+.carousel-image {
+    width: 100%;
 }
+
+.carousel-text {
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 34px;
+}
+
+.carousel-button {
+    color: #fff;
+    text-shadow: 3px 3px #000;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 50px;
+    border: 2px solid #fff;
+}
+
+.carousel-button:hover {
+    cursor: pointer;
+}
+
 
 .card {
     background-color: #dddddd!important;

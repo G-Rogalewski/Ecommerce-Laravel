@@ -1,71 +1,27 @@
 @extends('head')
 @extends('header')
 @section('home')
-    <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/brasileiros/parana_2021_i.png')}}">
-                        <h4 class="product-name">Camisa Paraná Clube I 2021</h4>
-                        <p class="product-price">R$149,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
+<main>
+    <section class="d-flex"><!--home -->  
+            <div id="carousel-main" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner"><!--Inner -->
+                <div class="carousel-item active">
+                  <img src="{{ asset('images/real_madrid.jpg')}}" class="carousel-image">
+                  <div class="carousel-caption d-none d-block">
+                    <p class="carousel-text">Adquira já a nova camisa do Real Madrid para a temporada 22/23</p>
+                    <button class="carousel-button">Comprar</button>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/brasileiros/parana_2020_ii.png')}}">
-                        <h4 class="product-name">Camisa Paraná Clube II 2020</h4>
-                        <p class="product-price">R$149,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/brasileiros/parana_2022_iii.png')}}">
-                        <h4 class="product-name">Camisa Paraná Clube III 2022</h4>
-                        <p class="product-price">R$179,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/brasileiros/vasco_2022_i.png')}}">
-                        <h4 class="product-name">Camisa Vasco I 2022</h4>
-                        <p class="product-price">R$179,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/europeus/real_madrid_2023_i.png')}}">
-                        <h4 class="product-name">Camisa Real Madrid I 22/23</h4>
-                        <p class="product-price">R$249,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/europeus/real_madrid_2023_ii.png')}}">
-                        <h4 class="product-name">Camisa Real Madrid II 22/23</h4>
-                        <p class="product-price">R$249,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
-                        </div>
-                    </div>
-                </div>
+                <!--/Inner -->
+              <!-- Controles -->
+              <a href="#carousel-main" class="carousel-control-prev" data-slide="prev">
+                <i class="fas fa-angle-left fa-3x"></i>
+              </a>
+              <a href="#carousel-main" class="carousel-control-next" data-slide="next">
+                <i class="fas fa-angle-right fa-3x"></i>
+              </a>
             </div>
-        </div>
-    </main>
+    </section><!--/home -->
+</main>
 @endsection
 @extends('footer')
