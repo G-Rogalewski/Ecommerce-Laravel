@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ asset('images/favicon.ico')}}">
-    <title>FutStore - Loja de Artigos de Futebol</title>
+    <title>FutStore - @yield('title')</title>
 </head>
 <body>
     @yield('header')

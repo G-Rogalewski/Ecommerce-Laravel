@@ -127,11 +127,11 @@ html, main, section {
     color: #87ceeb;
 }
 
-
-
 /***CAROUSEL***/
 .carousel-image {
     width: 100%;
+    opacity: 0.8;
+    max-height: 1080px;
 }
 
 .carousel-text {
@@ -147,6 +147,7 @@ html, main, section {
     text-shadow: 3px 3px #000;
     background-color: transparent;
     border: none;
+    border-radius: 10px;
     text-transform: uppercase;
     font-weight: bold;
     padding: 12px 50px;
@@ -156,7 +157,6 @@ html, main, section {
 .carousel-button:hover {
     cursor: pointer;
 }
-
 
 .card {
     background-color: #dddddd!important;
@@ -178,10 +178,11 @@ html, main, section {
 
 .product-name {
     font-family: 'Oswald', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     color: #4b4b4b;
     margin-top: 15px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .product-name:hover {
@@ -192,7 +193,7 @@ html, main, section {
 
 .product-price {
     font-family: 'Oswald', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     color: #4b4b4b;
     margin-left: 10px;
 }
