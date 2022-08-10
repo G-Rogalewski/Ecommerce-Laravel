@@ -1,5 +1,5 @@
-html, main, section {
-    background-color: #dddddd;
+header {
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -127,6 +127,10 @@ html, main, section {
     color: #87ceeb;
 }
 
+body {
+    background-color: #dddddd!important;
+}
+
 /***CAROUSEL***/
 .carousel-image {
     width: 100%;
@@ -160,7 +164,7 @@ html, main, section {
 
 .card {
     background-color: #dddddd!important;
-    margin: 30px 0;
+    margin-bottom: 30px;
     transition: 0.4s;
 }
 

@@ -1,4 +1,5 @@
 @section('header')
+<header>
     <nav class="navbar navbar-expand-md bg-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
@@ -25,10 +26,15 @@
                             aria-expanded="false" 
                             >Brasileiros</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos') }}">Bahia</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos') }}">Goiás</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros') }}">Minas Gerais</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses') }}">Paraná</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos') }}">Pernambuco</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos') }}">Rio Grande do Sul</a>
-                            <a class="dropdown-item submenu-link" href="#">Santa Catarina</a>
-                            <a class="dropdown-item submenu-link" href="#">Rio de Janeiro</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_catarinenses') }}">Santa Catarina</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paulistas') }}">São Paulo</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -52,4 +58,5 @@
             </div>
         </div>
     </nav>
+</header>
 @endsection
