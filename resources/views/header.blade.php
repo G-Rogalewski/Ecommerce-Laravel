@@ -1,6 +1,6 @@
 @section('header')
 <header>
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
                 <h1 class="logo">FutStore</h1>
@@ -38,7 +38,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="">Europeus</a>
+                        <a class="nav-link links" href="">Estrangeiros</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Seleções</a>
@@ -47,7 +47,7 @@
                         <a class="nav-link links" href="">Chuteiras</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links" href="">Luvas</a>
+                        <a class="nav-link links" href="">Bolas</a>
                     </li>
                     <span class="divisor"></span>
                     <div class="icons">
