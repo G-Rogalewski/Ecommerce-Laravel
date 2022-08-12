@@ -20,12 +20,12 @@
                     <li class="nav-item dropdown show">
                         <a class="nav-link links dropdown-toggle" 
                             role="button" 
-                            id="dropdownMenuLink" 
+                            id="clubes_brasileiros" 
                             data-toggle="dropdown" 
                             aria-haspopup="true" 
                             aria-expanded="false" 
                             >Brasileiros</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu" aria-labelledby="clubes_brasileiros">
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos') }}">Bahia</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos') }}">Goiás</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros') }}">Minas Gerais</a>
@@ -37,11 +37,55 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paulistas') }}">São Paulo</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="">Estrangeiros</a>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link links dropdown-toggle" 
+                            role="button" 
+                            id="clubes_estrangeiros" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false"
+                            >Estrangeiros</a>
+                        <div class="dropdown-menu" aria-labelledby="clubes_estrangeiros">
+                            <a class="dropdown-item submenu-link" href="#">Alemanha</a>
+                            <a class="dropdown-item submenu-link" href="#">Argentina</a>
+                            <a class="dropdown-item submenu-link" href="#">Espanha</a>
+                            <a class="dropdown-item submenu-link" href="#">França</a>
+                            <a class="dropdown-item submenu-link" href="#">Holanda</a>
+                            <a class="dropdown-item submenu-link" href="#">Inglaterra</a>
+                            <a class="dropdown-item submenu-link" href="#">Itália</a>
+                            <a class="dropdown-item submenu-link" href="#">Polônia</a>
+                            <a class="dropdown-item submenu-link" href="#">Portugal</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="">Seleções</a>
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link links dropdown-toggle" 
+                            role="button" 
+                            id="selecoes" 
+                            data-toggle="dropdown" 
+                            aria-haspopup="true" 
+                            aria-expanded="false">
+                            Seleções</a>
+                        <div class="dropdown-menu" aria-labelledby="selecoes">
+                            <a class="dropdown-item submenu-link" href="#">Alemanha</a>
+                            <a class="dropdown-item submenu-link" href="#">Argentina</a>
+                            <a class="dropdown-item submenu-link" href="#">Austrália</a>
+                            <a class="dropdown-item submenu-link" href="#">Bélgica</a>
+                            <a class="dropdown-item submenu-link" href="#">Brasil</a>
+                            <a class="dropdown-item submenu-link" href="#">Coréia do Sul</a>
+                            <a class="dropdown-item submenu-link" href="#">Croácia</a>
+                            <a class="dropdown-item submenu-link" href="#">Egito</a>
+                            <a class="dropdown-item submenu-link" href="#">Espanha</a>
+                            <a class="dropdown-item submenu-link" href="#">Estados Unidos</a>
+                            <a class="dropdown-item submenu-link" href="#">França</a>
+                            <a class="dropdown-item submenu-link" href="#">Holanda</a>
+                            <a class="dropdown-item submenu-link" href="#">Inglaterra</a>
+                            <a class="dropdown-item submenu-link" href="#">Itália</a>
+                            <a class="dropdown-item submenu-link" href="#">Japão</a>
+                            <a class="dropdown-item submenu-link" href="#">México</a>
+                            <a class="dropdown-item submenu-link" href="#">Polônia</a>
+                            <a class="dropdown-item submenu-link" href="#">Portugal</a>
+                            <a class="dropdown-item submenu-link" href="#">Uruguai</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links" href="">Chuteiras</a>
