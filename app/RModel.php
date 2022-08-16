@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class RModel extends Model
 {
     protected $primaryKey = 'id';
-    public $timespatams = true;
+    public $timestamps = true;
     public $incremeting = true; 
     protected $fillable = [];
 
