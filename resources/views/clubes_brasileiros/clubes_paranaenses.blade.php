@@ -11,7 +11,7 @@
                             <div class="card">
                                 <img class="card-img" src="{{ $prod->foto }}">
                                 <h4 class="product-name">{{ $prod->nome }}</h4>
-                                <p class="product-price">R$149,90</p>
+                                <p class="product-price">R${{ $prod->valor }}</p>
                                 <div class="product-button">
                                     <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
                                 </div>

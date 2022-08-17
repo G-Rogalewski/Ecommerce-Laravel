@@ -16,13 +16,13 @@ class InsertProducts extends Migration
         $cat = new \App\Categoria(['categoria' => 'Geral' ]);
         $cat->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 140, 'foto' => 'images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 149.90, 'foto' => 'images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
         $prod->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2020 - Away', 'valor' => 140, 'foto' => 'images/brasileiros/parana/parana_2020_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2020 - Away', 'valor' => 149.90, 'foto' => 'images/brasileiros/parana/parana_2020_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
         $prod->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2022 - Third', 'valor' => 140, 'foto' => 'images/brasileiros/parana/parana_2022_iii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2022 - Third', 'valor' => 179.90, 'foto' => 'images/brasileiros/parana/parana_2022_iii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
         $prod->save();
     }
 
