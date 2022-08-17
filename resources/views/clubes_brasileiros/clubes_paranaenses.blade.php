@@ -9,7 +9,7 @@
                     @foreach($lista as $prod)
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="card">
-                                <img class="card-img" src="{{ asset('images/brasileiros/parana/parana_2021_i.png')}}">
+                                <img class="card-img" src="{{ $prod->foto }}">
                                 <h4 class="product-name">{{ $prod->nome }}</h4>
                                 <p class="product-price">R$149,90</p>
                                 <div class="product-button">
