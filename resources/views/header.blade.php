@@ -1,6 +1,6 @@
 @section('header')
 <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">
                 <h1 class="logo">FutStore</h1>

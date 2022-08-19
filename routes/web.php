@@ -16,10 +16,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'parana'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'clubes'])
     ->name('clubes_paranaenses');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'bahia'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'clubes'])
     ->name('clubes_baianos');
 
 

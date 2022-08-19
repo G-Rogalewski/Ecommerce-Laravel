@@ -8,10 +8,10 @@ use \App\Produto;
 
 class ProdutoController extends Controller
 {
-    public function parana($idcategoria = 0, Request $request) {
+    public function clubes($idcategoria = 0, Request $request) {
         $data = [];
         $listaCategorias = Categoria::all();
-        $queyProduto = Produto::limit(18);
+        $queyProduto = Produto::limit(25);
         if($idcategoria != 0) {
             $queyProduto->where('categoria_id', $idcategoria);
         }
@@ -20,19 +20,5 @@ class ProdutoController extends Controller
         $data['lista'] = $listaProdutos;
         $data['listaCategoria'] = $listaCategorias;
         return view('clubes_brasileiros/clubes_paranaenses', $data);
-    }
-
-    public function bahia($idcategoria = 0, Request $request) {
-        $data = [];
-        $listaCategorias = Categoria::all();
-        $queyProduto = Produto::limit(16);
-        if($idcategoria != 0) {
-            $queyProduto->where('categoria_id', $idcategoria);
-        }
-        
-        $listaProdutos = $queyProduto->get();
-        $data['lista'] = $listaProdutos;
-        $data['listaCategoria'] = $listaCategorias;
-        return view('clubes_brasileiros/clubes_baianos', $data);
     }
 }

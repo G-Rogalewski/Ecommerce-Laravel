@@ -1,3 +1,8 @@
+.navbar-brand, .fixed-top {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
 .logo {
     color: #87ceeb;
     font-family: 'Alumni Sans Inline One', cursive;
@@ -125,6 +130,10 @@
 
 body {
     background-color: #dddddd!important;
+}
+
+section {
+    margin-top: 4%;
 }
 
 /***CAROUSEL***/
