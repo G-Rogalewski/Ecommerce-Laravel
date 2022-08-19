@@ -26,10 +26,10 @@
                             aria-expanded="false" 
                             >Brasileiros</a>
                         <div class="dropdown-menu" aria-labelledby="clubes_brasileiros">
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos', ['idcategoria' => 3]) }}">Bahia</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos', ['idcategoria' => 2]) }}">Bahia</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos') }}">Goiás</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros') }}">Minas Gerais</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 2]) }}">Paraná</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos') }}">Pernambuco</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos') }}">Rio Grande do Sul</a>

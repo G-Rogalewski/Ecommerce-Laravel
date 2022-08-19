@@ -13,84 +13,17 @@ class InsertProducts extends Migration
      */
     public function up()
     {
-        $cat = new \App\Categoria(['categoria' => 'Geral' ]);
-        $cat->save();
         $cat = new \App\Categoria(['categoria' => 'Parana' ]);
         $cat->save();
         $cat = new \App\Categoria(['categoria' => 'Bahia' ]);
         $cat->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 149.90, 'foto' => '../images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => 2]);
+        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 149.90, 'foto' => '../images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => 1]);
         $prod->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2020 - Away', 'valor' => 149.90, 'foto' => '../images/brasileiros/parana/parana_2020_ii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2022 - Third', 'valor' => 179.90, 'foto' => '../images/brasileiros/parana/parana_2022_iii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Coritiba 2022 - Home', 'valor' => 229.90, 'foto' => '../images/brasileiros/parana/coritiba_2022_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Coritiba 2022 - Away', 'valor' => 229.90, 'foto' => '../images/brasileiros/parana/coritiba_2022_ii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Operário Ferroviário 2021 - Home', 'valor' => 179.90, 'foto' => '../images/brasileiros/parana/operario_2021_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa União Francisco Beltrão 2021 - Home', 'valor' => 99.90, 'foto' => '../images/brasileiros/parana/uniao_2021_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa União Francisco Beltrão 2021 - Away', 'valor' => 99.90, 'foto' => '../images/brasileiros/parana/uniao_2021_ii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa FC Casvavel 2021 - Home', 'valor' => 49.90, 'foto' => '../images/brasileiros/parana/cascavel_2021_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa FC Casvavel 2021 - Away', 'valor' => 49.90, 'foto' => '../images/brasileiros/parana/cascavel_2021_ii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Maringá 2020 - Home', 'valor' => 99.90, 'foto' => '../images/brasileiros/parana/maringa_2020_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Cascavel CR 2021 - Home', 'valor' => 119.90, 'foto' => '../images/brasileiros/parana/cascavel_cr_2021_i.png', 'descricao' => '', 'categoria_id' => 2]);
+        $prod = new \App\Produto(['nome' => 'Camisa Bahia 2022 - Home', 'valor' => 229.90, 'foto' => '../images/brasileiros/bahia/bahia_2022_i.png', 'descricao' => '', 'categoria_id' => 2]);
         $prod->save();
         
-        $prod = new \App\Produto(['nome' => 'Camisa Cascavel CR 2021 - Away', 'valor' => 119.90, 'foto' => '../images/brasileiros/parana/cascavel_cr_2021_ii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-        
-        $prod = new \App\Produto(['nome' => 'Camisa Cascavel CR 2021 - Third', 'valor' => 119.90, 'foto' => '../images/brasileiros/parana/cascavel_cr_2021_iii.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Cambará 2018 - Home', 'valor' => 99.90, 'foto' => '../images/brasileiros/parana/cambara_2018_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Paranavaí 2018 - Home', 'valor' => 99.90, 'foto' => '../images/brasileiros/parana/paranavai_2018_i.png', 'descricao' => '', 'categoria_id' => 2]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Bahia 2022 - Home', 'valor' => 229.90, 'foto' => '../images/brasileiros/bahia/bahia_2022_i.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-        
-        $prod = new \App\Produto(['nome' => 'Camisa Bahia 2022 - Away', 'valor' => 229.90, 'foto' => '../images/brasileiros/bahia/bahia_2022_ii.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Vitória 2021 - Home', 'valor' => 199.90, 'foto' => '../images/brasileiros/bahia/vitoria_2021_i.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Vitória 2021 - Away', 'valor' => 199.90, 'foto' => '../images/brasileiros/bahia/vitoria_2021_ii.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Jacuipense 2021 - Home', 'valor' => 119.90, 'foto' => '../images/brasileiros/bahia/jacuipense_2021_i.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-        
-        $prod = new \App\Produto(['nome' => 'Camisa Jacuipense 2021 - Away', 'valor' => 119.90, 'foto' => '../images/brasileiros/bahia/jacuipense_2021_ii.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Fluminense de Feira 2022 - Home', 'valor' => 119.90, 'foto' => '../images/brasileiros/bahia/fluminense_feira_2022_i.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
-
-        $prod = new \App\Produto(['nome' => 'Camisa Fluminense de Feira 2021 - Away', 'valor' => 119.90, 'foto' => '../images/brasileiros/bahia/fluminense_feira_2021_ii.png', 'descricao' => '', 'categoria_id' => 3]);
-        $prod->save();
     }
 
     /**
