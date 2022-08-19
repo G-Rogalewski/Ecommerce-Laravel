@@ -11,7 +11,7 @@ class ProdutoController extends Controller
     public function parana($idcategoria = 0, Request $request) {
         $data = [];
         $listaCategorias = Categoria::all();
-        $queyProduto = Produto::limit(16);
+        $queyProduto = Produto::limit(18);
         if($idcategoria != 0) {
             $queyProduto->where('categoria_id', $idcategoria);
         }
