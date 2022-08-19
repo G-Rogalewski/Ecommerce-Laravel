@@ -16,8 +16,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::match(['get', 'post'], '/clubes_paranaenses', [ProdutoController::class, 'index'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'parana'])
     ->name('clubes_paranaenses');
+
+Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'bahia'])
+    ->name('clubes_baianos');
 
 
 
@@ -44,10 +47,6 @@ Route::get('/clubes_mineiros', function () {
 Route::get('/clubes_goianos', function () {
     return view('clubes_brasileiros/clubes_goianos');
 })->name('clubes_goianos');
-
-Route::get('/clubes_baianos', function () {
-    return view('clubes_brasileiros/clubes_baianos');
-})->name('clubes_baianos');
 
 Route::get('/clubes_pernambucanos', function () {
     return view('clubes_brasileiros/clubes_pernambucanos');

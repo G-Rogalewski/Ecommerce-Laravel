@@ -16,7 +16,7 @@ class InsertProducts extends Migration
         $cat = new \App\Categoria(['categoria' => 'Geral' ]);
         $cat->save();
 
-        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 149.90, 'foto' => 'images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2021 - Home', 'valor' => 149.90, 'foto' => '2/images/brasileiros/parana/parana_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
         $prod->save();
 
         $prod = new \App\Produto(['nome' => 'Camisa Paraná Clube 2020 - Away', 'valor' => 149.90, 'foto' => 'images/brasileiros/parana/parana_2020_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
@@ -62,6 +62,30 @@ class InsertProducts extends Migration
         $prod->save();
 
         $prod = new \App\Produto(['nome' => 'Camisa Paranavaí 2018 - Home', 'valor' => 99.90, 'foto' => 'images/brasileiros/parana/paranavai_2018_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Bahia 2022 - Home', 'valor' => 229.90, 'foto' => 'images/brasileiros/bahia/bahia_2022_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+        
+        $prod = new \App\Produto(['nome' => 'Camisa Bahia 2022 - Away', 'valor' => 229.90, 'foto' => 'images/brasileiros/bahia/bahia_2022_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Vitória 2021 - Home', 'valor' => 199.90, 'foto' => 'images/brasileiros/bahia/vitoria_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Vitória 2021 - Away', 'valor' => 199.90, 'foto' => 'images/brasileiros/bahia/vitoria_2021_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Jacuipense 2021 - Home', 'valor' => 119.90, 'foto' => 'images/brasileiros/bahia/jacuipense_2021_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+        
+        $prod = new \App\Produto(['nome' => 'Camisa Jacuipense 2021 - Away', 'valor' => 119.90, 'foto' => 'images/brasileiros/bahia/jacuipense_2021_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Fluminense de Feira 2022 - Home', 'valor' => 119.90, 'foto' => 'images/brasileiros/bahia/fluminense_feira_2022_i.png', 'descricao' => '', 'categoria_id' => $cat->id]);
+        $prod->save();
+
+        $prod = new \App\Produto(['nome' => 'Camisa Fluminense de Feira 2021 - Away', 'valor' => 119.90, 'foto' => 'images/brasileiros/bahia/fluminense_feira_2021_ii.png', 'descricao' => '', 'categoria_id' => $cat->id]);
         $prod->save();
     }
 
