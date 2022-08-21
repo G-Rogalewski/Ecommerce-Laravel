@@ -32,7 +32,7 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos') }}">Pernambuco</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos') }}">Rio Grande do Sul</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos', ['idcategoria' => 3]) }}">Rio Grande do Sul</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_catarinenses') }}">Santa Catarina</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paulistas') }}">São Paulo</a>
                         </div>

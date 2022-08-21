@@ -22,11 +22,9 @@ Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoContr
 Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'clubes'])
     ->name('clubes_baianos');
 
+Route::match(['get', 'post'], '/{idcategoria}/clubes_gauchos', [ProdutoController::class, 'clubes'])
+    ->name('clubes_gauchos');
 
-
-Route::get('/clubes_gauchos', function () {
-    return view('clubes_brasileiros/clubes_gauchos');
-})->name('clubes_gauchos');
 
 Route::get('/clubes_catarinenses', function () {
     return view('clubes_brasileiros/clubes_catarinenses');
