@@ -16,19 +16,19 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'clubes'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'pr'])
     ->name('clubes_paranaenses');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'clubes'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_baianos', [ProdutoController::class, 'ba'])
     ->name('clubes_baianos');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_gauchos', [ProdutoController::class, 'clubes'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_gauchos', [ProdutoController::class, 'rs'])
     ->name('clubes_gauchos');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_catarinenses', [ProdutoController::class, 'clubes'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_catarinenses', [ProdutoController::class, 'sc'])
     ->name('clubes_catarinenses');
 
-Route::match(['get', 'post'], '/{idcategoria}/clubes_goianos', [ProdutoController::class, 'clubes'])
+Route::match(['get', 'post'], '/{idcategoria}/clubes_goianos', [ProdutoController::class, 'go'])
     ->name('clubes_goianos');
 
 

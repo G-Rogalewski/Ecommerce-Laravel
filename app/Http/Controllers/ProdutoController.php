@@ -8,7 +8,7 @@ use \App\Produto;
 
 class ProdutoController extends Controller
 {
-    public function clubes($idcategoria = 0, Request $request) {
+    public function pr($idcategoria = 0, Request $request) {
         $data = [];
         $listaCategorias = Categoria::all();
         $queyProduto = Produto::limit(25);
@@ -20,5 +20,61 @@ class ProdutoController extends Controller
         $data['lista'] = $listaProdutos;
         $data['listaCategoria'] = $listaCategorias;
         return view('clubes_brasileiros/clubes_paranaenses', $data);
+    }
+    
+    public function ba($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_brasileiros/clubes_baianos', $data);
+    }
+    
+    public function rs($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_brasileiros/clubes_gauchos', $data);
+    }
+
+    public function sc($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_brasileiros/clubes_catarinenses', $data);
+    }
+
+    public function go($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_brasileiros/clubes_goianos', $data);
     }
 }
