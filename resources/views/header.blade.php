@@ -28,7 +28,7 @@
                         <div class="dropdown-menu" aria-labelledby="clubes_brasileiros">
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos', ['idcategoria' => 2]) }}">Bahia</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos', ['idcategoria' => 5]) }}">Goiás</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros') }}">Minas Gerais</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros', ['idcategoria' => 6]) }}">Minas Gerais</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos') }}">Pernambuco</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>

@@ -77,4 +77,18 @@ class ProdutoController extends Controller
         $data['listaCategoria'] = $listaCategorias;
         return view('clubes_brasileiros/clubes_goianos', $data);
     }
+    
+    public function mg($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_brasileiros/clubes_mineiros', $data);
+    }
 }
