@@ -30,7 +30,7 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos', ['idcategoria' => 5]) }}">Goiás</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros', ['idcategoria' => 6]) }}">Minas Gerais</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos') }}">Pernambuco</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos', ['idcategoria' => 7]) }}">Pernambuco</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos', ['idcategoria' => 3]) }}">Rio Grande do Sul</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_catarinenses', ['idcategoria' => 4]) }}">Santa Catarina</a>
