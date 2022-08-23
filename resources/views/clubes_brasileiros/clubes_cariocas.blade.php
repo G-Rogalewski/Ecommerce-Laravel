@@ -1,20 +1,24 @@
 @extends('head')
 @extends('header')
-@section('clubes_cariocas')
+@section('products')
 @section('title', 'Clubes Cariocas')
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <img class="card-img" src="{{ asset('images/brasileiros/parana/parana_2021_i.png')}}">
-                        <h4 class="product-name">Camisa Paraná Clube 2021 - Home</h4>
-                        <p class="product-price">R$149,90</p>
-                        <div class="product-button">
-                            <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                @if(isset($lista))
+                    @foreach($lista as $prod)
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img class="card-img" src="{{ $prod->foto }}">
+                                <h4 class="product-name">{{ $prod->nome }}</h4>
+                                <p class="product-price">R${{ $prod->valor }}</p>
+                                <div class="product-button">
+                                    <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </section>

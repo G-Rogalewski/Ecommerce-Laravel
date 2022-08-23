@@ -31,10 +31,10 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros', ['idcategoria' => 6]) }}">Minas Gerais</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_pernambucanos', ['idcategoria' => 7]) }}">Pernambuco</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas') }}">Rio de Janeiro</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_cariocas', ['idcategoria' => 8]) }}">Rio de Janeiro</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_gauchos', ['idcategoria' => 3]) }}">Rio Grande do Sul</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_catarinenses', ['idcategoria' => 4]) }}">Santa Catarina</a>
-                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paulistas') }}">São Paulo</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_paulistas', ['idcategoria' => 9]) }}">São Paulo</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown show">

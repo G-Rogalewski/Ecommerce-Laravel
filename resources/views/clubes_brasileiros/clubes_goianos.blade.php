@@ -1,6 +1,6 @@
 @extends('head')
 @extends('header')
-@section('clubes_goianos')
+@section('products')
 @section('title', 'Clubes Goianos')
     <section>
         <div class="container">

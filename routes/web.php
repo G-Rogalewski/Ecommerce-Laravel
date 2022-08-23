@@ -37,12 +37,8 @@ Route::match(['get', 'post'], '/{idcategoria}/clubes_mineiros', [ProdutoControll
 Route::match(['get', 'post'], '/{idcategoria}/clubes_pernambucanos', [ProdutoController::class, 'pe'])
     ->name('clubes_pernambucanos');
 
+Route::match(['get', 'post'], '/{idcategoria}/clubes_cariocas', [ProdutoController::class, 'rj'])
+    ->name('clubes_cariocas');
 
-Route::get('/clubes_paulistas', function () {
-    return view('clubes_brasileiros/clubes_paulistas');
-})->name('clubes_paulistas');
-
-Route::get('/clubes_cariocas', function () {
-    return view('clubes_brasileiros/clubes_cariocas');
-})->name('clubes_cariocas');
-
+Route::match(['get', 'post'], '/{idcategoria}/clubes_paulistas', [ProdutoController::class, 'sp'])
+    ->name('clubes_paulistas');
