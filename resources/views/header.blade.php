@@ -27,6 +27,7 @@
                             >Brasileiros</a>
                         <div class="dropdown-menu" aria-labelledby="clubes_brasileiros">
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_baianos', ['idcategoria' => 2]) }}">Bahia</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_cearenses', ['idcategoria' => 10]) }}">Ceará</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_goianos', ['idcategoria' => 5]) }}">Goiás</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_mineiros', ['idcategoria' => 6]) }}">Minas Gerais</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_paranaenses', ['idcategoria' => 1]) }}">Paraná</a>
@@ -68,14 +69,11 @@
                         <div class="dropdown-menu" aria-labelledby="selecoes">
                             <a class="dropdown-item submenu-link" href="#">Alemanha</a>
                             <a class="dropdown-item submenu-link" href="#">Argentina</a>
-                            <a class="dropdown-item submenu-link" href="#">Austrália</a>
                             <a class="dropdown-item submenu-link" href="#">Bélgica</a>
                             <a class="dropdown-item submenu-link" href="#">Brasil</a>
                             <a class="dropdown-item submenu-link" href="#">Coréia do Sul</a>
                             <a class="dropdown-item submenu-link" href="#">Croácia</a>
-                            <a class="dropdown-item submenu-link" href="#">Egito</a>
                             <a class="dropdown-item submenu-link" href="#">Espanha</a>
-                            <a class="dropdown-item submenu-link" href="#">Estados Unidos</a>
                             <a class="dropdown-item submenu-link" href="#">França</a>
                             <a class="dropdown-item submenu-link" href="#">Holanda</a>
                             <a class="dropdown-item submenu-link" href="#">Inglaterra</a>
