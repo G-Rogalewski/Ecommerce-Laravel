@@ -50,7 +50,7 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_alemaes', ['idcategoria' => 13]) }}">Alemanha</a>
                             <a class="dropdown-item submenu-link" href="#">Argentina</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_espanhois', ['idcategoria' => 11]) }}">Espanha</a>
-                            <a class="dropdown-item submenu-link" href="#">França</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_franceses', ['idcategoria' => 15]) }}">França</a>
                             <a class="dropdown-item submenu-link" href="#">Holanda</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_ingleses', ['idcategoria' => 12]) }}">Inglaterra</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_italianos', ['idcategoria' => 14]) }}">Itália</a>
