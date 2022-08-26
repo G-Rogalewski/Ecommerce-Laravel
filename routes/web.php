@@ -54,3 +54,6 @@ Route::match(['get', 'post'], '/{idcategoria}/clubes_ingleses', [ProdutoControll
 
 Route::match(['get', 'post'], '/{idcategoria}/clubes_alemaes', [ProdutoController::class, 'ale'])
     ->name('clubes_alemaes');
+    
+Route::match(['get', 'post'], '/{idcategoria}/clubes_italianos', [ProdutoController::class, 'ita'])
+->name('clubes_italianos');
