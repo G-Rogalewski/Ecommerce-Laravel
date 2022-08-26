@@ -67,22 +67,12 @@
                             aria-expanded="false">
                             Seleções</a>
                         <div class="dropdown-menu" aria-labelledby="selecoes">
-                            <a class="dropdown-item submenu-link" href="#">Alemanha</a>
-                            <a class="dropdown-item submenu-link" href="#">Argentina</a>
-                            <a class="dropdown-item submenu-link" href="#">Bélgica</a>
-                            <a class="dropdown-item submenu-link" href="#">Brasil</a>
-                            <a class="dropdown-item submenu-link" href="#">Coréia do Sul</a>
-                            <a class="dropdown-item submenu-link" href="#">Croácia</a>
-                            <a class="dropdown-item submenu-link" href="#">Espanha</a>
-                            <a class="dropdown-item submenu-link" href="#">França</a>
-                            <a class="dropdown-item submenu-link" href="#">Holanda</a>
-                            <a class="dropdown-item submenu-link" href="#">Inglaterra</a>
-                            <a class="dropdown-item submenu-link" href="#">Itália</a>
-                            <a class="dropdown-item submenu-link" href="#">Japão</a>
-                            <a class="dropdown-item submenu-link" href="#">México</a>
-                            <a class="dropdown-item submenu-link" href="#">Polônia</a>
-                            <a class="dropdown-item submenu-link" href="#">Portugal</a>
-                            <a class="dropdown-item submenu-link" href="#">Uruguai</a>
+                            <a class="dropdown-item submenu-link" href="#">AFC</a>
+                            <a class="dropdown-item submenu-link" href="#">CAF</a>
+                            <a class="dropdown-item submenu-link" href="#">CONCACAF</a>
+                            <a class="dropdown-item submenu-link" href="#">CONMEBOL</a>
+                            <a class="dropdown-item submenu-link" href="#">OFC</a>
+                            <a class="dropdown-item submenu-link" href="#">UEFA</a>
                         </div>
                     </li>
                     <li class="nav-item">
