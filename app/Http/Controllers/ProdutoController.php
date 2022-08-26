@@ -175,4 +175,18 @@ class ProdutoController extends Controller
         $data['listaCategoria'] = $listaCategorias;
         return view('clubes_estrangeiros/clubes_ingleses', $data);
     }
+    
+    public function ale($idcategoria = 0, Request $request) {
+        $data = [];
+        $listaCategorias = Categoria::all();
+        $queyProduto = Produto::limit(25);
+        if($idcategoria != 0) {
+            $queyProduto->where('categoria_id', $idcategoria);
+        }
+        
+        $listaProdutos = $queyProduto->get();
+        $data['lista'] = $listaProdutos;
+        $data['listaCategoria'] = $listaCategorias;
+        return view('clubes_estrangeiros/clubes_alemaes', $data);
+    }
 }

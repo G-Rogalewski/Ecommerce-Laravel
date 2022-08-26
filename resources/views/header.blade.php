@@ -47,7 +47,7 @@
                             aria-expanded="false"
                             >Estrangeiros</a>
                         <div class="dropdown-menu" aria-labelledby="clubes_estrangeiros">
-                            <a class="dropdown-item submenu-link" href="#">Alemanha</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_alemaes', ['idcategoria' => 13]) }}">Alemanha</a>
                             <a class="dropdown-item submenu-link" href="#">Argentina</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_espanhois', ['idcategoria' => 11]) }}">Espanha</a>
                             <a class="dropdown-item submenu-link" href="#">França</a>

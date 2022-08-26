@@ -129,7 +129,7 @@
 }
 
 body {
-    background-color: #dddddd!important;
+    background-color: #cccccc!important;
 }
 
 section {
@@ -168,7 +168,7 @@ section {
 }
 
 .card {
-    background-color: #dddddd!important;
+    background-color: #cccccc!important;
     margin: 30px 0;
     transition: 0.4s;
 }
@@ -216,7 +216,7 @@ section {
     height: 40px;
     border-radius: 5px;
     border: 1px solid #0d7eaa;
-    background-color: #dddddd;
+    background-color: #cccccc;
     color: #0d7eaa;
     margin-bottom: 25px;
     cursor: pointer;
