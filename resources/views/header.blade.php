@@ -54,7 +54,7 @@
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_holandeses', ['idcategoria' => 16]) }}">Holanda</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_ingleses', ['idcategoria' => 12]) }}">Inglaterra</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_italianos', ['idcategoria' => 14]) }}">Itália</a>
-                            <a class="dropdown-item submenu-link" href="#">Portugal</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_portugueses', ['idcategoria' => 17]) }}">Portugal</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown show">
