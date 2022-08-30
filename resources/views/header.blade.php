@@ -51,10 +51,9 @@
                             <a class="dropdown-item submenu-link" href="#">Argentina</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_espanhois', ['idcategoria' => 11]) }}">Espanha</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_franceses', ['idcategoria' => 15]) }}">França</a>
-                            <a class="dropdown-item submenu-link" href="#">Holanda</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('clubes_holandeses', ['idcategoria' => 16]) }}">Holanda</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_ingleses', ['idcategoria' => 12]) }}">Inglaterra</a>
                             <a class="dropdown-item submenu-link" href="{{ route('clubes_italianos', ['idcategoria' => 14]) }}">Itália</a>
-                            <a class="dropdown-item submenu-link" href="#">Polônia</a>
                             <a class="dropdown-item submenu-link" href="#">Portugal</a>
                         </div>
                     </li>
@@ -74,12 +73,6 @@
                             <a class="dropdown-item submenu-link" href="#">OFC</a>
                             <a class="dropdown-item submenu-link" href="#">UEFA</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="">Chuteiras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links" href="">Bolas</a>
                     </li>
                     <span class="divisor"></span>
                     <div class="icons">
