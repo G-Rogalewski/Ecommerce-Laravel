@@ -69,7 +69,7 @@
                             <a class="dropdown-item submenu-link" href="#">AFC</a>
                             <a class="dropdown-item submenu-link" href="#">CAF</a>
                             <a class="dropdown-item submenu-link" href="#">CONCACAF</a>
-                            <a class="dropdown-item submenu-link" href="#">CONMEBOL</a>
+                            <a class="dropdown-item submenu-link" href="{{ route('conmebol', ['idcategoria' => 19]) }}">CONMEBOL</a>
                             <a class="dropdown-item submenu-link" href="#">OFC</a>
                             <a class="dropdown-item submenu-link" href="#">UEFA</a>
                         </div>

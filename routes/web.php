@@ -69,3 +69,6 @@ Route::match(['get', 'post'], '/{idcategoria}/clubes_portugueses', [ProdutoContr
 
 Route::match(['get', 'post'], '/{idcategoria}/clubes_argentinos', [ProdutoController::class, 'arg'])
 ->name('clubes_argentinos');
+
+Route::match(['get', 'post'], '/{idcategoria}/conmebol', [ProdutoController::class, 'conmebol'])
+->name('conmebol');
