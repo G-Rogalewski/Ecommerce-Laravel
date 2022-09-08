@@ -72,3 +72,9 @@ Route::match(['get', 'post'], '/{idcategoria}/clubes_argentinos', [ProdutoContro
 
 Route::match(['get', 'post'], '/{idcategoria}/conmebol', [ProdutoController::class, 'conmebol'])
 ->name('conmebol');
+
+Route::match(['get', 'post'], '/{idproduto}/carrinho/adicionar', [ProdutoController::class, 'adicionarCarrinho'])
+->name('adicionar_carrinho');
+
+Route::match(['get', 'post'], '/carrinho', [ProdutoController::class, 'verCarrinho'])
+->name('ver_carrinho');

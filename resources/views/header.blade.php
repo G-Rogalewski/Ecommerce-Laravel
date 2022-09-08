@@ -76,8 +76,10 @@
                     </li>
                     <span class="divisor"></span>
                     <div class="icons">
-                    <i class="far fa-user icon"></i>
-                    <i class="fas fa-shopping-cart icon"></i>
+                        <i class="far fa-user icon"></i>
+                        <a href="{{ route('ver_carrinho') }}">
+                            <i class="fas fa-shopping-cart icon"></i>
+                        </a>
                     </div>
                 </ul>
             </div>

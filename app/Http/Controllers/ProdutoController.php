@@ -273,4 +273,19 @@ class ProdutoController extends Controller
         $data['listaCategoria'] = $listaCategorias;
         return view('selecoes/conmebol', $data);
     }
+
+    public function adicionarCarrinho($idProduto = 0, Request $request) {
+        $prod = Produto::find($idProduto);
+        if($prod) {
+            $carrinho = session('cart', []);
+            array_push($carrinho, $prod);
+            session([ 'cart' => $carrinho ]);
+        }
+        return redirect()->route('home');
+    }
+
+    public function verCarrinho(Request $request) {
+        $carrinho = session('cart', []);
+        dd($carrinho);
+    }
 }
