@@ -316,3 +316,12 @@ footer p {
     font-size: 26px;
     margin: 0 5px;
 }
+
+.table thead th, .table td, table {
+    border-top: 1px solid #4b4b4b;
+    border-bottom: 1px solid #4b4b4b!important;
+}
+
+.table td {
+    vertical-align: baseline!important;
+}

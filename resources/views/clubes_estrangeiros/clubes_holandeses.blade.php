@@ -13,7 +13,9 @@
                                 <h4 class="product-name">{{ $prod->nome }}</h4>
                                 <p class="product-price">R${{ $prod->valor }}</p>
                                 <div class="product-button">
-                                    <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                                    <a href="{{ route('adicionar_carrinho', ['idproduto' => $prod->id]) }}">
+                                        <button class="add-button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
