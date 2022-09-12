@@ -23,6 +23,8 @@
     border-right: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     outline: none;
     background-color: #343a40;
     color: #a0aab8;
@@ -249,6 +251,53 @@ section {
 
 .add-button:hover:after {
     width: 110%;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+input {
+    background-color: #cccccc;
+    border: 1px solid #131313;
+    border-radius: 5px;
+    padding-left: 5px;   
+}
+
+input::placeholder{
+    color: #131313;
+}
+
+input:focus-visible {
+    outline: none;
+    box-shadow: 1px 1px 5px #131313;
+}
+
+#name, #email {
+    width: 25%;
+}
+
+#rua, #cidade {
+    width: 80%;
+}
+
+.form-button {
+    width: 8%;
+    color: #131313;
+    border: 1px solid #131313;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #131313;
+    color: #dddddd;
+    transition: 0.4s;
 }
 
 footer {

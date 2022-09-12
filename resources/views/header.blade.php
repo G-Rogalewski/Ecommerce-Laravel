@@ -76,7 +76,9 @@
                     </li>
                     <span class="divisor"></span>
                     <div class="icons">
-                        <i class="far fa-user icon"></i>
+                        <a href="{{ route('registrar') }}">
+                            <i class="far fa-user icon"></i>
+                        </a>
                         <a href="{{ route('ver_carrinho') }}">
                             <i class="fas fa-shopping-cart icon"></i>
                         </a>
