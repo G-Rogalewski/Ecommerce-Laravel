@@ -2,7 +2,7 @@
 @extends('header')
 @section('home')
 @section('title', 'Carrinho')
-    <section style="margin-top: 100px;">
+    <section style="margin-top: 100px; margin-bottom: 60px;">
         <div class="container">
             <h3>Carrinho</h3>
             @if(isset($cart) && count($cart) > 0)
@@ -17,10 +17,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach($cart as $p)
+                    @foreach($cart as $indice => $p)
                         <tr>
                             <td>
-                                <a href="#" class="btn btn-danger btn-sm">
+                                <a href="{{ route('delete_cart', [ 'indice' => $indice]) }}" class="btn btn-danger btn-sm">
                                     <i class="fas fa-trash"></i>
                                 </a>
                             </td>

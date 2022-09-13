@@ -82,3 +82,6 @@ Route::match(['get', 'post'], '/{idproduto}/carrinho/adicionar', [ProdutoControl
 
 Route::match(['get', 'post'], '/carrinho', [ProdutoController::class, 'verCarrinho'])
 ->name('ver_carrinho');
+
+Route::match(['get', 'post'], '/{indice}/deleteCart', [ProdutoController::class, 'delete_cart'])
+->name('delete_cart');

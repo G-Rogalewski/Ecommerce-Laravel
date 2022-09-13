@@ -289,4 +289,13 @@ class ProdutoController extends Controller
         $data = [ 'cart' => $carrinho ];
         return view('carrinho', $data);
     }
+
+    public function delete_cart ($indice, Request $request) {
+        $carrinho = session('cart', []);
+        if (isset($carrinho[$indice])) {
+            unset($carrinho[$indice]);
+        }
+        session(['cart' => $carrinho]);
+        return redirect()->route('ver_carrinho');
+    }
 }
