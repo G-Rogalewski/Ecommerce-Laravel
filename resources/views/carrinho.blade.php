@@ -2,7 +2,7 @@
 @extends('header')
 @section('home')
 @section('title', 'Carrinho')
-    <section style="margin-top: 100px; margin-bottom: 60px;">
+    <section style="margin-top: 7rem; margin-bottom: 14rem;">
         <div class="container">
             <h3>Carrinho</h3>
             @if(isset($cart) && count($cart) > 0)

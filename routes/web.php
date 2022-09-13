@@ -16,9 +16,11 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/registrar', function () {
-    return view('registrar');
-})->name('registrar');
+Route::match(['get', 'post'], '/registrar', [ProdutoController::class, 'registrar'])
+    ->name('registrar');
+
+    Route::match(['get', 'post'], '/registrar_cliente', [ProdutoController::class, 'RegistrarCliente'])
+    ->name('registrar_cliente');
 
 Route::match(['get', 'post'], '/{idcategoria}/clubes_paranaenses', [ProdutoController::class, 'pr'])
     ->name('clubes_paranaenses');

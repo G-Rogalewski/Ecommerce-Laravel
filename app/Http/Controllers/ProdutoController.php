@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Categoria;
 use \App\Produto;
+use \App\Usuario;
+use \App\Endereco;
 
 class ProdutoController extends Controller
 {
@@ -297,5 +299,21 @@ class ProdutoController extends Controller
         }
         session(['cart' => $carrinho]);
         return redirect()->route('ver_carrinho');
+    }
+
+    public function registrar(Request $request) {
+        $data = [];
+
+        return view('registrar', $data);
+    }
+
+    public function registrarCliente(Request $request) {
+        $values = $request->all();
+        $usuario = new Usuario();
+        $usuario->fill($values);
+        $endereco = new Endereco($values);
+        $endereco->logradouro = $request->input('endereco', '');
+
+        return redirect()->route('registrar');
     }
 }
