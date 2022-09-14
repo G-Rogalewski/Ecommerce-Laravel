@@ -311,8 +311,17 @@ class ProdutoController extends Controller
         $values = $request->all();
         $usuario = new Usuario();
         $usuario->fill($values);
+        $usuario->login = $request->input('cpf', '');
         $endereco = new Endereco($values);
         $endereco->logradouro = $request->input('endereco', '');
+
+        try {
+            $usuario->save();
+            $endereco->usuario_id = $usuario->id;
+            $endereco->save(); 
+        } catch(\Exception $e) {
+
+        }
 
         return redirect()->route('registrar');
     }
