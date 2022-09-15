@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ asset('images/favicon.ico')}}">
     <title>FutStore - @yield('title')</title>
+    @yield('scriptjs')
 </head>
 <body>
     @yield('header')
